@@ -1,0 +1,143 @@
+body {margin: 0; font-family: "Klee One", cursive;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2f434f;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #274a45;}
+
+ul.topnav li a.active {background-color: #67b5af;}
+
+ul.topnav li.right {float: right; background-color: #ba6cb5;}
+
+.par{
+	margin: 2rem;
+}
+
+.par img{
+	float:right;
+	width:15rem;
+	border-radius:50px 0px 50px 30px;
+}
+
+iframe{
+	margin:2rem;
+}
+
+
+.par{
+	margin-left:10rem;
+	margin-right:10rem;
+	background-color:#818d91;
+	padding:20px;
+}
+
+
+footer {
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  background-color: Gray;
+  color: white;
+}
+
+
+
+/*LINK STUFF*/
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: lime;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*END LINK STUFF*/
+
+
+/*BUTTON*/
+.button a:link, a:visited{
+  background-color: #ba6cb5;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:10px;
+  color: white;
+}
+
+.button a:hover, a:active{
+  background-color: lime;
+}
+/*END BUTTON*/
+
+/*MOBILE*/
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+
+
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.klee-one-semibold {
+  font-family: "Klee One", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logobutton{
+	font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.par img{
+	height:100%;
+}
+
+iframe{
+	width:100%;
+	margin:0;
+	margin-top:2rem;
+}
+
+.par{
+	margin-left:2rem;
+	margin-right:2rem;
+	
+}
+}
+/*END MOBILE*/
