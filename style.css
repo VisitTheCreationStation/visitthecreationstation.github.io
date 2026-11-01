@@ -1,228 +1,227 @@
-body {margin: 0; font-family: "Klee One", cursive;}
+/* ==========================================================================
+   1. GLOBAL & DESKTOP STYLES
+   ========================================================================== */
+body {
+	margin: 0; 
+	font-family: "Klee One", cursive;
+}
 
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #2f434f;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #2f434f;
 }
 
-ul.topnav li {float: left;}
-
-ul.topnav li a{
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
+ul.topnav li {
+	float: left;
 }
 
-ul.topnav li:not(.logo) a{
-  padding: 14px 16px;
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
 }
 
-ul.topnav li:not(.kids) a:hover:not(.active) {background-color: #274a45;}
+ul.topnav li:not(.logo) a {
+	padding: 14px 16px;
+}
 
-ul.topnav li a.active {background-color: #67b5af;}
+ul.topnav li:not(.kids) a:hover:not(.active) {
+	background-color: #274a45;
+}
 
-ul.topnav li.right {float: right;}
+ul.topnav li a.active {
+	background-color: #67b5af;
+}
 
-ul.topnav li.kids{
+ul.topnav li.right {
+	float: right;
+}
+
+ul.topnav li.kids {
 	font-family: "Schoolbell", cursive;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	letter-spacing: 10px;
-	h1 {
-		display: inline-block;
-	}
-	&:hover{
-		letter-spacing: 25px;
-		transform: scale(1.3);
-		transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-		font-weight:bold;
-		
-	}
-}
 }
 
-ul.topnav li.kids a:hover:not(.active){
-  font-family: "Schoolbell", cursive;
-  font-weight: 400;
-  font-style: normal;
-  
+ul.topnav li.kids h1 {
+	display: inline-block;
 }
 
-.par{
+ul.topnav li.kids:hover {
+	letter-spacing: 25px;
+	transform: scale(1.3);
+	transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	font-weight: bold;
+}
+
+ul.topnav li.kids a:hover:not(.active) {
+	font-family: "Schoolbell", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.par {
+	border-radius: 30px;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	margin-top: 20px;
+	color: white;
+	background-color: #818d91;
+	background: linear-gradient(180deg, rgba(129, 141, 145, 1) 32%, rgba(114, 122, 125, 1) 76%);
+	padding: 20px;
+	box-shadow: 14px 14px 10px rgba(94, 85, 97, 0.6);
+}
+
+.par img {
+	float: right;
+	width: 15rem;
+	border-radius: 50px 0px 50px 30px;
+}
+
+iframe {
 	margin: 2rem;
-	color:white;
-	
+	box-shadow: 15px 18px 2px #3f414a;
 }
 
-.par img{
-	float:right;
-	width:15rem;
-	border-radius:50px 0px 50px 30px;
+.new-paragraph {
+	background-color: #444444;
+	padding: 5px 30px 30px;
+	margin-left: 10rem;
+	margin-right: 10rem;
+	margin-top: 20px;
+	color: white;
+	box-shadow: inset 5px 5px 15px black;
+	border-radius: 15px;
 }
 
-iframe{
-	margin:2rem;
-	box-shadow:15px 18px 2px #3f414a;
+.new-paragraph img {
+	border-radius: 50px 0px 50px 30px;
+	box-shadow: 0px 0px 15px #67b5af;
+	margin-left: 20px;
+	border: 5px solid white;
 }
 
-
-.par{
-	margin-left:10rem;
-	margin-right:10rem;
-	background-color:#818d91;
-	background: #818D91;
-	background: -webkit-linear-gradient(180deg,rgba(129, 141, 145, 1) 32%, rgba(114, 122, 125, 1) 76%);
-	background: -moz-linear-gradient(180deg,rgba(129, 141, 145, 1) 32%, rgba(114, 122, 125, 1) 76%);
-	background: linear-gradient(180deg,rgba(129, 141, 145, 1) 32%, rgba(114, 122, 125, 1) 76%);
-	filter: progid:DXImageTransform.Microsoft.gradient(
-  startColorstr="#818D91",
-  endColorstr="#727A7D",
-  GradientType=0
-);
-	padding:20px;
-	box-shadow:15px 18px 2px #666666;
+/* LINK STUFF */
+a:link:not(.pagefooter),
+a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
 }
 
+a:hover {
+	color: lime;
+	background-color: transparent;
+	text-decoration: underline;
+}
 
-
-
-
-/*LINK STUFF*/
-a:link:not(.pagefooter){
-  color: blue;
-  background-color: transparent;
-  text-decoration: none;
+a:active {
+	color: green;
+	background-color: transparent;
+	text-decoration: underline;
 }
 
 footer {
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  background-color: Gray;
-  color: white;
+	padding: 30px;
+	background-color: Gray;
+	color: white;
+	box-shadow: inset 5px 10px 30px #242424;
+}	
+
+footer a:link {
+	color: white;
+}
+
+.levels {
+	background-color: black;
+}
+
+/* BUTTON STUFF () */
+.button a:link, 
+.button a:visited {
+	background-color: #ba6cb5;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
+	color: white;
+}
+
+.button a:hover, 
+.button a:active {
+	background-color: lime;
+}
+
+.printable-button a:link, 
+.printable-button a:visited {
+	background-color: green;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10px;
 }
 
 
-
-
-
-
-
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: lime;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:active {
-  color: green;
-  background-color: transparent;
-  text-decoration: underline;
-}
-/*END LINK STUFF*/
-
-.printable-button{
-	
-
-
-/*BUTTON*/
-.button a:link, a:visited{
-  background-color: #ba6cb5;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius:10px;
-  color: white;
-}
-
-.button a:hover, a:active{
-  background-color: lime;
-}
-/*END BUTTON*/
-
-
-
-/*BUTTON*/
-.printable-button a:link, a:visited{
-  background-color: green;
-  color: blue;
-  padding: 15px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius:10px;
-
-}
-
-.button a:hover, a:active{
-  background-color: lime;
-}
-/*END BUTTON*/
-
-
-
-footer a:link{
-  color: white;
-}
-
-
-
-.levels{
-	background-color:black;
-}
-
-/*MOBILE*/
+/* ==========================================================================
+   2. MOBILE OVERRIDES (Screens 600px and below)
+   ========================================================================== */
 @media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+	ul.topnav li.right, 
+	ul.topnav li {
+		float: none;
+	}
 
+	.caprasimo-regular {
+		font-family: "Caprasimo", serif;
+		font-weight: 400;
+		font-style: normal;
+	}
 
+	.klee-one-semibold {
+		font-family: "Klee One", cursive;
+		font-weight: 600;
+		font-style: normal;
+	}
 
-.caprasimo-regular {
-  font-family: "Caprasimo", serif;
-  font-weight: 400;
-  font-style: normal;
+	.logobutton {
+		font-family: "Caprasimo", serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.par img {
+		float: none;         /* Keeps the layout clean when full-width */
+		width: 100% !important;
+		margin-bottom: 15px;
+	}
+
+	.new-paragraph img {
+		width: 100% !important;
+		margin-left: 0;      /* Centers it on mobile frames */
+	}
+
+	iframe {
+		width: 100% !important;
+		margin: 2rem 0 0 0;
+	}
+
+	.par {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.new-paragraph {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
-
-.klee-one-semibold {
-  font-family: "Klee One", cursive;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.logobutton{
-	font-family: "Caprasimo", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.par img{
-	height:100%;
-}
-
-iframe{
-	width:100%;
-	margin:0;
-	margin-top:2rem;
-}
-
-.par{
-	margin-left:2rem;
-	margin-right:2rem;
-	
-}
-}
-/*END MOBILE*/
