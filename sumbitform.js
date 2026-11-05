@@ -1,28 +1,34 @@
-// 1. Select the form
+// 1. Select the form element
 const form = document.getElementById('select-sheet');
 
-// 2. Add an event listener for the submit action
+// 2. Add an event listener for the form submission
 form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevents the page from refreshing
+  event.preventDefault(); // Prevents page reload
 
-  //var formData = new FormData(form);
-  
-  //var formObject = Object.fromEntries(formData.entries());
-  
-  const destinationVariable = document.getElementById('select').value;
-  
-  
-  // 1. Access the specific input value by its "name" attribute
-  // Change 'pdfName' to match the exact name attribute of your HTML input
-  
-  //let destinationVariable = formObject.pdfNames;
-  
+  // Get the selected document key from the dropdown
+  const selectElement = document.getElementById('select');
+  const destinationVariable = selectElement.value;
+  const resultText = document.getElementById('resultText');
+
+  // Check if the selected option is one of the "Coming Soon" placeholders
+  if (destinationVariable === 'bonus2' || destinationVariable === 'bonus3') {
+    if (resultText) {
+      resultText.textContent = "This document is coming soon! Please check back later.";
+      resultText.style.color = "#ba6cb5";
+    }
+    return;
+  }
+
+  // Clear any previous message
+  if (resultText) {
+    resultText.textContent = "";
+  }
+
+  // Build the relative path to the PDF
   const fileName = `PDFs/${destinationVariable}.pdf`;
-  
-  console.log(fileName); // Output
-  console.log(document.getElementById('select').value);
-  
+
+  console.log("Opening file:", fileName);
+
+  // Open the PDF in a new browser tab
   window.open(fileName, '_blank');
-
 });
-
