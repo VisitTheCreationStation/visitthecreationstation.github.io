@@ -1,120 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Creation Station Official Website - Grow With Us!</title>
-		<link rel="icon" type="image/x-icon" href="logos/favicon.ico">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		
-		
-		<!--Google font-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Klee+One:wght@600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=keyboard_arrow_right" />
-		<link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="logos/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Klee+One:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=keyboard_arrow_right" />
+        <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 
-		<script src="sumbitform.js" defer></script>
-		
+        <script src="sumbitform.js" defer></script>
     </head>
-    <body>
+    <body id="top">
 	
 <!--NAVBAR-->
-	<ul class="topnav">
-	<!--logo--><li class="logo"><a href="index.htm"><img src="logos/website-logo.png" style="width:210px; padding:0;"></a></li>
-	<!--index--><li><a href="index.htm">Home</a></li>
-	<!--About--><li><a href="about.htm">About</a></li>
-	<!--Printables--><li><a class="active" href="printables.htm">Printables</a></li>
-	<!--Extras--><li><a href="extras.htm">Extras</a></li>
-	<!--Create--><li class="right"><a href="create.htm"><b>Share the Station</b></a></li>
-</ul>
+    <ul class="topnav">
+        <!-- Logo -->
+        <li class="logo"><a href="index.htm"><img src="logos/website-logo.png" alt="Creation Station Logo" style="width:210px; padding:0;"></a></li>
+        <!-- Index -->
+        <li><a href="index.htm">Home</a></li>
+        <!-- About -->
+        <li><a href="about.htm">About</a></li>
+        <!-- Printables -->
+        <li><a class="active" href="printables.htm">Printables</a></li>
+        <!-- Extras -->
+        <li><a href="extras.htm">Extras</a></li>
+        <!-- Create -->
+        <li class="right"><a href="create.htm"><b>Share the Station</b></a></li>
+    </ul>
 <!--END NAVBAR-->
 
+<div class="new-paragraph">
+    <div class="new-paragraph" style="margin-left:0px; margin-right:0px;">
+        <div class="select">
+            <h1>Select a Document</h1>
 
+            <p>
+                Please select a document you wish to view or print below:<br>
+                Recommended age levels:<br>
+                Level 1: K-2 Grade<br>
+                Level 2: 4-6 Grade<br>
+                Level 3: 7-8 Grade
+            </p>
 
+            <form action="/action_page.php" id="select-sheet">
+                <label for="select">Choose a document:</label>
+                <select name="Select" id="select">
+                    <optgroup label="Level 1">
+                        <option value="write story1">How to Write a Story</option>
+                        <option value="draw vehicles">How to Draw: Vehicles</option>
+                        <option value="bonus">Level 1 Bonus Content</option>
+                    </optgroup>
+                    <optgroup label="Level 2">
+                        <option value="write story2">How to Write a Story</option>
+                        <option value="DrawingNow">How to Draw: Animals</option>
+                        <option value="bonus2">Bonus Content (Coming Soon!)</option>
+                    </optgroup>
+                    <optgroup label="Level 3">
+                        <option value="write characters">How to Develop a Character</option>
+                        <option value="DrawPeople">How to Draw: People</option>
+                        <option value="bonus3">Bonus Content (Coming Soon!)</option>
+                    </optgroup>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 
-
-
-
+        <p id="resultText"></p>
+    </div>
+</div>
 
 <div class="new-paragraph">
-<div class="new-paragraph" style="margin-left:0px;margin-right:0px;">
+    <h1>Story Ideas</h1>
 
+    <a href="https://www.scholastic.com/teachers/story-starters/index" target="_blank" rel="noopener noreferrer">
+        <img src="images/StoryStarters.png" height="180" alt="Story Starters">
+    </a>
 
-<div class="select" style="">
-<h1>Select a Document</h1>
+    <a href="https://storywritingacademy.com/writing-prompt-generator-kids/" target="_blank" rel="noopener noreferrer">
+        <img src="images/WritingPromptGenerator.png" height="180" alt="Writing Prompt Generator">
+    </a>
 
-<p>Please select a document you wish to view or print below:<br>Recommended age levels:<br>Level 1: K-2 Grade<br>Level 2: 4-6 Grade<br>Level 3: 7-8 Grade</p>
-
-<form action="/action_page.php" id="select-sheet">
-  <label for="levels">Choose a document:</label>
-  <select name="Select" id="select">
-    <optgroup label="Level 1">
-      <option value="write story1">How to Write a Story</option>
-      <option value="draw vehicles">How to Draw: Vehicles</option>
-      <option value="bonus">Level 1 Bonus Content</option>
-    </optgroup>
-    <optgroup label="Level 2">
-      <option value="write story2">How to Write a Story</option>
-      <option value="DrawingNow">How to Draw: Animals</option>
-      <option value="bonus2">Bonus Content (Coming Soon!)</option>
-    </optgroup>
-    <optgroup label="Level 3">
-      <option value="write characters">How to Develop a Character</option>
-      <option value="DrawPeople">How to Draw: People</option>
-      <option value="bonus3">Bonus Content (Coming Soon!)</option>
-    </optgroup>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
-
-
-
+    <a href="https://mystorybox.co/story-idea-generator/" target="_blank" rel="noopener noreferrer">
+        <img src="images/StoryGenerator.png" height="180" alt="Story Idea Generator">
+    </a>
 </div>
 
-
-
-<p id="resultText"></p>
-
+<div style="margin-bottom:10px; overflow: auto;">
+    <img style="float: left; margin-left: 30px; margin-top:10px;" src="images/girlwithbooks.png" height="220" alt="Girl With Books">
 </div>
-</div>
-
-
-<div class="new-paragraph">
-<h1>Story Ideas</h1>
-
-<a href="https://www.scholastic.com/teachers/story-starters/index" target="_blank">
-  <img src="images/StoryStarters.png" height="180" alt="Story Starters"></a>
-
-<a href="https://storywritingacademy.com/writing-prompt-generator-kids/" target="_blank">
-  <img src="images/WritingPromptGenerator.png" height="180" alt="Writing Prompt Generator"></a>
-
-<a href="https://mystorybox.co/story-idea-generator/" target="_blank">
-  <img src="images/StoryGenerator.png" height="180" alt="Writing Prompt Generator"></a>
-
-
-</div>
-
-
-
-
-
-<div style="margin-bottom:10px;overflow: auto;">
-<img style="float: left; margin-left: 30px; margin-top:10px;" src="images/girlwithbooks.png" height="220" alt="Girl With Books">
-</div>
-
 
 <!--footer-->
 <footer>
-  <p>The Creation Station ©2026 Alivia Peterson<br>
-  <a href="mailto:alivialeafpeterson@gmail.com">alivialeafpeterson@gmail.com</a><br>
-  <a href="index.htm">Home</a> <a href="about.htm">About</a> <a href="printables.htm">Printables</a><br>
-  <a href="#create">Share</a><br>
-  <a href="#top">Back to Top</a><br>
-  </p>
+    <p>
+        The Creation Station &copy;2026 Alivia Peterson<br>
+        <a href="mailto:alivialeafpeterson@gmail.com">alivialeafpeterson@gmail.com</a><br>
+        <a href="index.htm">Home</a> | <a href="about.htm">About</a> | <a href="printables.htm">Printables</a><br>
+        <a href="create.htm">Share</a><br>
+        <a href="#top">Back to Top</a><br>
+    </p>
 </footer>
 <!--END footer-->
+
     </body>
 </html>
