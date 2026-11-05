@@ -1,6 +1,6 @@
 /* ==========================================================================
-   1. GLOBAL & DESKTOP STYLES
-   ========================================================================== */
+    1. GLOBAL & DESKTOP STYLES
+    ========================================================================== */
 body {
 	margin: 0; 
 	font-family: "Klee One", cursive;
@@ -107,7 +107,6 @@ iframe {
 	margin-left: 20px;
 	margin-bottom: 20px;
 	border: 5px solid white;
-	overflow: auto;
 }
 
 /* LINK STUFF */
@@ -145,7 +144,8 @@ footer a:link {
 	background-color: black;
 }
 
-/* BUTTON STUFF () */
+/* BUTTON STUFF */
+.button, 
 .button a:link, 
 .button a:visited {
 	background-color: #ba6cb5;
@@ -157,11 +157,13 @@ footer a:link {
 	color: white;
 }
 
+.button:hover,
 .button a:hover, 
 .button a:active {
 	background-color: lime;
 }
 
+.printable-button,
 .printable-button a:link, 
 .printable-button a:visited {
 	background-color: green;
@@ -175,41 +177,28 @@ footer a:link {
 
 
 /* ==========================================================================
-   2. MOBILE OVERRIDES (Screens 600px and below)
-   ========================================================================== */
+    2. MOBILE OVERRIDES (Screens 600px and below)
+    ========================================================================== */
 @media screen and (max-width: 600px) {
 	ul.topnav li.right, 
 	ul.topnav li {
 		float: none;
 	}
 
-	.caprasimo-regular {
-		font-family: "Caprasimo", serif;
-		font-weight: 400;
-		font-style: normal;
-	}
-
-	.klee-one-semibold {
-		font-family: "Klee One", cursive;
-		font-weight: 600;
-		font-style: normal;
-	}
-
-	.logobutton {
-		font-family: "Caprasimo", serif;
-		font-weight: 400;
-		font-style: normal;
-	}
-
 	.par img {
-		float: none;         /* Keeps the layout clean when full-width */
-		width: 100% !important;
-		margin-bottom: 15px;
+		float: none !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 15px auto !important;
 	}
 
 	.new-paragraph img {
-		width: 100% !important;
-		margin-left: 0;      /* Centers it on mobile frames */
+		float: none !important;
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 15px auto !important; /* Centers the image */
 	}
 
 	iframe {
